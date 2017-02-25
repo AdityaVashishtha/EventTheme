@@ -55,6 +55,7 @@ body>.section-scroll:nth-child(odd) {
     top: 0px;
     right: 0px;
     padding: 10px;
+    padding-top: 15px;
     width: 200px;
     height: 60px;
 }
