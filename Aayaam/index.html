@@ -191,6 +191,7 @@
                     </h1>
                 </div>
                 <!--This is partical background-->
+                <h2>Welcome to AAYAAM</h2>
             </div>
     </section>
 
@@ -241,6 +242,13 @@
     <script src="js/EasePack.min.js"></script>
     <script src="js/rAF.js"></script>
     <script src="js/demo-1.js"></script>
+    <script>
+        [].slice.call(document.querySelectorAll('.grid a')).forEach(function(el) {
+            el.onclick = function() {
+                return false;
+            }
+        });
+    </script>
 
 
 </body>
