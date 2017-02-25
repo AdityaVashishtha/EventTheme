@@ -88,6 +88,10 @@ body>.section-scroll:nth-child(odd) {
     z-index: 100;
 }
 
+.box:nth-child(even) {
+    background: #7ac;
+}
+
 @media (max-width: 468px) {
     .large-header>.upper-bar {
         display: none;
