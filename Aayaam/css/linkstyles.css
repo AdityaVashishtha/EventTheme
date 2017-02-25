@@ -10,59 +10,128 @@
 }
 
 
-/* Takiri */
+/* Nukun */
 
-.link--takiri {
-    font-style: italic;
-    font-weight: 700;
-    font-size: 1.25em;
-    padding: 0 10px 20px;
-    -webkit-transition: color 0.5s;
-    transition: color 0.5s;
+.link--nukun {
+    color: #E3E8DC;
+    font-weight: 900;
+    text-transform: uppercase;
+    overflow: hidden;
+    padding: 10px 0;
+    -webkit-transition: color 0.3s;
+    transition: color 0.3s;
 }
 
-.link--takiri:hover {
+.link--nukun:hover {
     color: #F9F9F9;
 }
 
-.link--takiri::before {
+.link--nukun::before,
+.link--nukun::after {
     content: '';
     position: absolute;
-    height: 36px;
-    width: 120%;
-    top: 50%;
-    margin-top: -18px;
-    left: -10%;
-    z-index: -1;
-    background: #345887;
-    -webkit-transform: rotate3d(0, 0, 1, 45deg) scale3d(0, 1, 1);
-    transform: rotate3d(0, 0, 1, 45deg) scale3d(0, 1, 1);
+    width: 30%;
+    height: 5px;
+    background: #E3E8DC;
+    bottom: 0;
+    left: 23%;
     -webkit-transition: -webkit-transform 0.5s;
     transition: transform 0.5s;
+    -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+    transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
 }
 
-.link--takiri:hover::before {
-    -webkit-transform: rotate3d(0, 0, 1, 45deg) scale3d(1, 1, 1);
-    transform: rotate3d(0, 0, 1, 45deg) scale3d(1, 1, 1);
+.link--nukun::after {
+    background: #ACD07A;
+    -webkit-transform: translate3d(-300%, 0, 0) scale3d(0, 1, 1);
+    transform: translate3d(-300%, 0, 0) scale3d(0, 1, 1);
 }
 
-.link--takiri span {
-    font-size: 20%;
-    font-weight: 400;
-    position: absolute;
-    right: 15px;
-    font-size: 0.50em;
+.link--nukun:hover::before {
+    -webkit-transform: translate3d(300%, 0, 0) scale3d(0, 1, 1);
+    transform: translate3d(300%, 0, 0) scale3d(0, 1, 1);
+}
+
+.link--nukun:hover::after {
+    -webkit-transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+    transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+}
+
+.link--nukun span {
+    color: #E3E8DC;
+    display: inline-block;
+    position: relative;
+    -webkit-transform: perspective(1000px) rotate3d(0, 1, 0, 0deg);
+    transform: perspective(1000px) rotate3d(0, 1, 0, 0deg);
+    -webkit-transition: -webkit-transform 0.5s, color 0.5s;
+    transition: transform 0.5s, color 0.5s;
+    -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+    transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+.link--nukun:hover span {
+    color: #fff;
+    -webkit-transform: perspective(1000px) rotate3d(0, 1, 0, 180deg);
+    transform: perspective(1000px) rotate3d(0, 1, 0, 180deg);
+}
+
+
+/* Kumya */
+
+.link--kumya {
+    font-family: 'Syncopate', sans-serif;
+    font-size: 1.5em;
+    overflow: hidden;
+    padding: 10px 10px;
+    line-height: 1;
+    color: #ACD07A;
+}
+
+.link--kumya:hover {
     color: #F9F9F9;
-    bottom: 0;
-    opacity: 0;
-    -webkit-transform: translate3d(-10px, -10px, 0);
-    transform: translate3d(-10px, -10px, 0);
-    -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
-    transition: transform 0.5s, opacity 0.5s;
 }
 
-.link--takiri:hover span {
-    opacity: 1;
+.link--kumya::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background: #242424;
+    -webkit-transform: translate3d(101%, 0, 0);
+    transform: translate3d(101%, 0, 0);
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+    -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+    transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+.link--kumya:hover::after {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
+}
+
+.link--kumya span {
+    display: block;
+    position: relative;
+}
+
+.link--kumya span::before {
+    content: attr(data-letters);
+    position: absolute;
+    color: #fff;
+    left: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0%;
+    -webkit-transition: width 0.5s;
+    transition: width 0.5s;
+    -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+    transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+.link--kumya:hover span::before {
+    width: 100%;
 }
