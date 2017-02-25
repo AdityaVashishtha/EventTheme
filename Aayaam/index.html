@@ -178,12 +178,9 @@
 
     <div class="section-scroll" data-0="transform:translate(0%,100%);" data-100p="transform:translate(0,0%)" data-_box-0p="" data-_box-0p="transform:translate(0,0%)">
         <h2>description</h2>
-        <div class="box event-section" data-_box-0="transform:translate(100%,0%);" data-_box-30p="transform:translate(0%,0%);"></div>
-        <div class="box event-section" data-_box-0="transform:translate(100%,0%);" data-_box-50p="transform:translate(0%,0%);"></div>
-        <div class="box event-section" data-_box-0="transform:translate(100%,0%);" data-_box-60p="transform:translate(0%,0%);"></div>
-        <div class="box event-section" data-_box-0="transform:translate(-100%,0%);" data-_box-80p="transform:translate(0%,0%);">
+        <div class="box event-section" data-_box-0="transform:translate(-100%,0%);" data-_box-100p="transform:translate(0%,0%);">
             <!--grid added for events-->
-            <div class="sub-title" data-_box-0="transform: rotateZ(360deg);" data-_box-100p="transform:rotateZ(0deg);">Events</div>
+            <div class="sub-title animated rubberBand infinite">Events</div>
             <ul class="grid cs-style-4">
                 <li>
                     <figure>
@@ -259,7 +256,7 @@
             constants: {
                 //fill the box for a "duration" of 150% of the viewport (pause for 150%)
                 //adjust for shorter/longer pause
-                box: '150p'
+                box: '100p'
             }
         });
     </script>
@@ -282,23 +279,6 @@
     <script src="js/rAF.js"></script>
     <script src="js/demo-1.js"></script>
     <script src="js/toucheffects.js"></script>
-    <script src="dist/wow.js"></script>
-    <script>
-        wow = new WOW({
-            animateClass: 'animated',
-            offset: 100,
-            callback: function(box) {
-                console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
-            }
-        });
-        wow.init();
-        document.getElementById('moar').onclick = function() {
-            var section = document.createElement('section');
-            section.className = 'section--purple wow fadeInDown';
-            this.parentNode.insertBefore(section, this);
-        };
-    </script>
-
     <script>
         [].slice.call(document.querySelectorAll('.grid a')).forEach(function(el) {
             el.onclick = function() {
