@@ -34,10 +34,6 @@ body>.section-scroll:nth-child(odd) {
     width: 100%;
 }
 
-.large-header {
-    border: 1px solid blue;
-}
-
 .large-header>.upper-bar {
     position: fixed;
     width: 100%;
@@ -59,15 +55,13 @@ body>.section-scroll:nth-child(odd) {
     top: 0px;
     right: 0px;
     padding: 10px;
-    border: 1px solid cyan;
     width: 200px;
     height: 60px;
 }
 
 .large-header>.upper-bar>.right-bar>ul>li {
     display: block;
-    font-weight: bold;
-    border: 1px solid greenyellow;
+    font-weight: 400;
     margin-right: 10px;
     font-size: 1.35em;
     float: left;
