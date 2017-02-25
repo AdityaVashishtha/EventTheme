@@ -48,6 +48,7 @@
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" type="text/css" href="css/partical-background.css" />
     <link rel="stylesheet" type="text/css" href="css/linkstyles.css" />
+    <link rel="stylesheet" type="text/css" href="css/grid-event.css" />
     <link rel="stylesheet" type="text/css" href="css/style1.css" />
     <link href='http://fonts.googleapis.com/css?family=Raleway:200,400,800' rel='stylesheet' type='text/css'>
     <!--[if IE]>
@@ -170,6 +171,11 @@
                 </div>
             </div>
     </section>
+    <style>
+        .a {
+            transform: rotateX('angle')
+        }
+    </style>
 
 
 
@@ -179,20 +185,66 @@
     <div class="section-scroll" data-0="transform:translate(0%,100%);" data-100p="transform:translate(0,0%)" data-_box-10p="" data-_box-200p="transform:translate(0,0%)">
         <h2>description</h2>
         <div class="box" data-_box-0="transform:translate(-100%,0%);" data-_box-100p="transform:translate(0%,0%);">
-            <h2>THIS Section</h2>
-            <h2>THIS Section</h2>
-            <h2>THIS Section</h2>
-            <h2>THIS Section</h2>
-            <h2>THIS Section</h2>
-            <h2>THIS Section</h2>
-            <h2>THIS Section</h2>
-            <h2>THIS Section</h2>
-            <h2>THIS Section</h2>
-            <h2>THIS Section</h2>
-            <h2>THIS Section</h2>
-            <h2>THIS Section</h2>
-            <h2>THIS Section</h2>
-            <h2>THIS Section</h2>
+            <!--grid added for events-->
+            <div class="sub-title" data-_box-0="transform: translate(-100%,-100%) rotateZ(360deg);" data-_box-100p="transform: translate(0%,0%) rotateZ(0deg);">Events</div>
+            <ul class="grid cs-style-4">
+                <li>
+                    <figure>
+                        <div><img src="images/5.jpg" alt="img05"></div>
+                        <figcaption>
+                            <h3>Technical</h3>
+                            <h3>Events</h3>
+                            <a href="#">Take a look</a>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <div><img src="images/6.jpg" alt="img06"></div>
+                        <figcaption>
+                            <h3>Game Center</h3>
+                            <a href="http://dribbble.com/shots/1118904-Game-Center">Take a look</a>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <div><img src="images/2.jpg" alt="img02"></div>
+                        <figcaption>
+                            <h3>Music</h3>
+                            <a href="http://dribbble.com/shots/1115960-Music">Take a look</a>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <div><img src="images/4.jpg" alt="img04"></div>
+                        <figcaption>
+                            <h3>Cultural</h3>
+                            <a href="http://dribbble.com/shots/1116685-Settings">Take a look</a>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <div><img src="images/1.jpg" alt="img01"></div>
+                        <figcaption>
+                            <h3>Coding Events</h3>
+                            <a href="http://dribbble.com/shots/1115632-Camera">Take a look</a>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <div><img src="images/3.jpg" alt="img03"></div>
+                        <figcaption>
+                            <h3>Robtics Events</h3>
+                            <a href="http://dribbble.com/shots/1117308-Phone">Take a look</a>
+                        </figcaption>
+                    </figure>
+                </li>
+            </ul>
+            <!--grid added for events-->
         </div>
     </div>
     <div class="section-scroll" data-200p="transform:translate(-100%,-125%);" data-450p="transform:translate(0,0%)" data-_nbox-210p="" data-_nbox-550p="transform:translate(0%,0%);">
@@ -227,10 +279,12 @@
     <script src="js/custom-scripts.js"></script>
 
     <!--for partical background-->
+    <script src="js/modernizr.custom.js"></script>
     <script src="js/TweenLite.min.js"></script>
     <script src="js/EasePack.min.js"></script>
     <script src="js/rAF.js"></script>
     <script src="js/demo-1.js"></script>
+    <script src="js/toucheffects.js"></script>
     <script>
         [].slice.call(document.querySelectorAll('.grid a')).forEach(function(el) {
             el.onclick = function() {
