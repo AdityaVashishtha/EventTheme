@@ -1191,11 +1191,11 @@ section.section {
  */
 
 .semi-dark-background {
-    background-color: #5f656f;
+    background-color: #282828;
 }
 
 .dark-background {
-    background-color: #354856;
+    background-color: #2a2b30;
 }
 
 
@@ -1232,7 +1232,7 @@ section.section {
 }
 
 .main-navbar-top.navbar-top-js {
-    background-color: #016cc7;
+    background-color: #2a2b30;
     top: -70px;
 }
 
@@ -1904,7 +1904,7 @@ section.section {
 
 #fp-nav ul li a:hover span,
 #fp-nav ul li a.active span {
-    background-color: #354856;
+    background-color: #2a2b30;
 }
 
 #fp-nav ul li.show-text .fp-tooltip .text {
@@ -1918,7 +1918,7 @@ section.section {
 }
 
 #fp-nav ul li.show-text a span {
-    background-color: #354856;
+    background-color: #2a2b30;
 }
 
 #fp-nav.show-nav {
