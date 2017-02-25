@@ -110,6 +110,7 @@
                 <!-- TEMPLATE LOGO LIGHT -->
                 <a class="navbar-brand light-logo btn-scroll" href="https://www.facebook.com/dequinox.jyc/?fref=ts"><img src="images/logo.png" alt="" class="img-responsive"></a>
 
+
             </div>
 
             <!-- Main Menu List -->
@@ -176,13 +177,13 @@
 
 
 
-    <div class="section-scroll" data-0="transform:translate(0%,0%);" data-100p="transform:translate(0,-100%);"></div>
-    <div class="section-scroll" data-0="transform:translate(0%,0%);" data-100p="background: #020310;transform:translate(0,-100%);"></div>
-    <div class="section-scroll" data-0="transform:translate(0%,100%);" data-100p="transform:translate(0,0%)" data-_box-10p="" data-_box-200p="transform:translate(0,0%)">
+
+    <div class="first-section-scroll section-scroll" data-0="transform:translate(0%,100%);" data-100p="transform:translate(0,0%)" data-_box-0p="" data-_box-100p="transform:translate(0,0%)"> </div>
+    <div class="section-scroll" data-0="transform:translate(0%,100%);" data-100p="transform:translate(0,0%)" data-_box-0p="" data-_box-0p="transform:translate(0,0%)">
         <h2>description</h2>
-        <div class="box event-section" data-_box-0="transform:translate(-100%,0%);" data-_box-100p="transform:translate(0%,0%);">
+        <div class="box event-section" data-_box-0="transform:translate(-100%,0%);" data-_box-80p="transform:translate(0%,0%);">
             <!--grid added for events-->
-            <div class="sub-title" data-_box-0="transform: translate(-1100%,-100%) rotateZ(360deg);" data-_box-100p="transform: translate(0%,0%) rotateZ(0deg);">Events</div>
+            <div class="sub-title" data-_box-0="transform: rotateZ(360deg);" data-_box-100p="transform:rotateZ(0deg);">Events</div>
             <ul class="grid cs-style-4">
                 <li>
                     <figure>
@@ -243,11 +244,11 @@
             <!--grid added for events-->
         </div>
     </div>
-    <div class="section-scroll" data-200p="transform:translate(-100%,-125%);" data-450p="transform:translate(0,0%)" data-_nbox-210p="" data-_nbox-550p="transform:translate(0%,0%);">
+    <div class="section-scroll" data-250p="transform:translate(-100%,-125%);" data-300p="transform:translate(0,0%)" data-_nbox-210p="" data-_nbox-350p="transform:translate(0%,0%);">
         <h2>Team</h2>
-        <div class="nbox box" style="background: gray" data-_nbox-500p="transform:translate(-100%,100%);" data-_nbox-600p="transform:translate(0%,0%);">
-            <h2>Events Section</h2>
-        </div>
+    </div>
+    <div class="section-scroll" data-300p="transform:translate(100%,125%);" data-350p="transform:translate(0,0%)" data-_nbox-210p="" data-_nbox-400p="transform:translate(0%,0%);">
+        <h2>Contact Us</h2>
     </div>
 
 
@@ -281,6 +282,23 @@
     <script src="js/rAF.js"></script>
     <script src="js/demo-1.js"></script>
     <script src="js/toucheffects.js"></script>
+    <script src="dist/wow.js"></script>
+    <script>
+        wow = new WOW({
+            animateClass: 'animated',
+            offset: 100,
+            callback: function(box) {
+                console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+            }
+        });
+        wow.init();
+        document.getElementById('moar').onclick = function() {
+            var section = document.createElement('section');
+            section.className = 'section--purple wow fadeInDown';
+            this.parentNode.insertBefore(section, this);
+        };
+    </script>
+
     <script>
         [].slice.call(document.querySelectorAll('.grid a')).forEach(function(el) {
             el.onclick = function() {

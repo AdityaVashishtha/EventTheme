@@ -16,12 +16,11 @@ body>.section-scroll {
 }
 
 body>.section-scroll:nth-child(even) {
-    background: #345688;
+    background: #F9F9F9;
 }
 
 body>.section-scroll:nth-child(odd) {
     background: #f0f0f0;
-    overflow: hidden;
 }
 
 .box {
@@ -79,7 +78,14 @@ body>.section-scroll:nth-child(odd) {
 }
 
 .event-section {
-    background: #fcd93b;
+    background: #F9F9F9;
+}
+
+.first-selection-scroll {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
 }
 
 @media (max-width: 468px) {
