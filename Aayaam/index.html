@@ -48,6 +48,7 @@
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" type="text/css" href="css/partical-background.css" />
     <link rel="stylesheet" type="text/css" href="css/linkstyles.css" />
+    <link rel="stylesheet" type="text/css" href="css/style1.css" />
     <link href='http://fonts.googleapis.com/css?family=Raleway:200,400,800' rel='stylesheet' type='text/css'>
     <!--[if IE]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -57,46 +58,6 @@
             <script src="js/plagin-js/html5shiv.js"></script>
             <script src="js/plagin-js/respond.min.js"></script>
         <![endif]-->
-
-
-
-    <style type="text/css">
-        * {
-            margin: 0;
-            padding: 0;
-        }
-        
-        body>.section-scroll {
-            padding-top: 60px;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: transparent center no-repeat;
-            background-size: cover;
-        }
-        
-        body>.section-scroll:nth-child(even) {
-            background: #345688;
-        }
-        
-        body>.section-scroll:nth-child(odd) {
-            background: #f0f0f0;
-            overflow: hidden;
-        }
-        
-        .box {
-            position: absolute;
-            background: #FEFEFE;
-            left: 0;
-            top: 0;
-            padding-top: 60px;
-            height: 100%;
-            width: 100%;
-        }
-    </style>
-
 </head>
 
 <body class="style-1">
@@ -178,20 +139,32 @@
     <!-- Start: Page Slider Area
         ================================== -->
 
+
+    <!--This is partical background-->
+    <div id="large-header" class="large-header">
+        <div class="upper-bar" data-0="opacity:1" data-100p="opacity:0">
+            <div class="left-logo"></div>
+            <div class="right-bar">
+                <ul>
+                    <li><a class="btn-nav" href="#contact-us-section">Contact <i class="icon icon-arrow-right"></i></a></li>
+                    <li><a class="btn-nav" href="#contact" target="_blank"> Register <i class="icon icon-arrow-right"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <canvas id="demo-canvas"></canvas>
+        <h1 class="main-title">
+            <div class="grid__item">
+                <a class="link link--takiri" href="#">AAYAAM <span>2K17</span></a>
+            </div>
+        </h1>
+    </div>
+    <!--This is partical background-->
     <section class="content-area" id="fullpage">
         <div class="container-fluid">
             <div class="row">
-                <!--This is partical background-->
-                <div id="large-header" class="large-header">
-                    <canvas id="demo-canvas"></canvas>
-                    <h1 class="main-title">
-                        <div class="grid__item">
-                            <a class="link link--takiri" href="#">AAYAAM <span>2K17</span></a>
-                        </div>
-                    </h1>
+                <div class="section section-item home-section overflow hide-overlay overlay-color bg-image-1 wow" id="home-section">
+
                 </div>
-                <!--This is partical background-->
-                <h2>Welcome to AAYAAM</h2>
             </div>
     </section>
 
