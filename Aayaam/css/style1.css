@@ -78,6 +78,10 @@ body>.section-scroll:nth-child(odd) {
     bottom: 0px;
 }
 
+.event-section {
+    background: #fcd93b;
+}
+
 @media (max-width: 468px) {
     .large-header>.upper-bar {
         display: none;
