@@ -39,7 +39,10 @@ body>.section-scroll:nth-child(odd) {
     width: 100%;
 }
 
-.large-header {}
+.large-header {
+    position: fixed;
+    z-index: 0;
+}
 
 .large-header>.upper-bar {
     position: fixed;
